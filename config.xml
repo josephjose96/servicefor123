@@ -1,4 +1,4 @@
-  <?xml version="1.0" encoding="UTF-8" ?>
+  <?xml version="1.0" encoding="UTF-8"?>
    <widget>
 <gap:plugin name="com.google.cordova.admob" source="plugins.cordova.io" />
 </widget>
