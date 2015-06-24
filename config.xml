@@ -4,7 +4,9 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.smartz.easymeaning"
         version     = "1.0.0"
-        versionCode = "10" >
+        versionCode = "10" 
+        
+    >
 <gap:plugin name="com.google.cordova.admob" source="plugins.cordova.io" />
   
 </widget>
