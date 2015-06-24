@@ -1,21 +1,7 @@
-  <? xml version="1.0" encoding="UTF-8" ?>
+  <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns = "http://www.w3.org/ns/widgets"
-        
         xmlns:gap ="http://phonegap.com/ns/1.0"
         id        = "com.smartz.easymeaning"
         version = "1.0.0" >
 <gap:plugin name="com.google.cordova.admob" source="plugins.cordova.io" />
-  
-  
-        <preference name="phonegap-version" value="3.5.0" />
-
-        <name>Easy Meaning</name>
-
-        <description>
-      This is an online dictionary app
-        </description>
-
-        <author  email="josephjose.967@gmail.com">
-        Joseph Jose
-        </author>
 </widget>
