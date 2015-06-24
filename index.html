@@ -26,4 +26,35 @@
 </table>
 </div>
 </body>
+<script>
+var admobid = {};
+if( /(android)/i.test(navigator.userAgent) ) { 
+    admobid = { // for Android
+        banner: ' ca-app-pub-6243595857492911/4365106614',
+        interstitial: 'ca-app-pub-6243595857492911/8934907012'
+    };
+} else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
+    admobid = { // for iOS
+        banner: ' ca-app-pub-6243595857492911/4365106614',
+        interstitial: 'ca-app-pub-6243595857492911/8934907012'
+    };
+} else {
+    admobid = { // for Windows Phone
+        banner: ' ca-app-pub-6243595857492911/4365106614',
+        interstitial: 'ca-app-pub-6243595857492911/8934907012'
+    };
+}
+
+function initApp() {
+    if (AdMob) {
+        AdMob.createBanner({
+            adId : admobid.banner,
+            position : AdMob.AD_POSITION.BOTTOM_CENTER,
+            autoShow : true
+        });
+    }
+}
+
+document.addEventListener('deviceready', initApp, false);
+</script>
 </html>
